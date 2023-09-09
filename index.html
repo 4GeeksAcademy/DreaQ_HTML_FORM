@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet"
+integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
+    <title>Document</title>
+    
+  </head>
+
+  <body>
+    <!--(DIV ONE)-->
+    <div class="container card">
+       
+      <form>
+      <!--(DIV 2)-->
+      <div class="row" style="margin: 10px;">
+       <strong>Payment Form</strong> 
+      </div>
+      <div class="row alert alert-danger">
+        some fields are missing
+      </div>
+      <!--(DIV 3)-->
+        <div class="row">
+          <!--DIV 4 INSIDE DIV 3-->
+            <!--DIV 5 FLEX INSIDE 3 -->
+            <div
+            class="row"
+              style="margin: 5px;">
+              <div class="col-sm-12 col-md-4">
+
+                  <label for="">Card #</label>
+                  <input type="text" class="form-control"/>
+              
+              </div>
+              <div class="col-sm-12 col-md-4">
+                  <label for="">CVC #</label> 
+                  <input type="text" class="form-control"/>
+              </div>
+                <div class="col-sm-12 col-md-4"> 
+                <label for=""><strong>$</strong>Amount</label> 
+                <input type="text" class="form-control"/>
+              </div>
+            </div>
+        </div>
+
+      <!--(one big div flex -6)-->
+      <div class="row">
+          <div class="col-md-6">
+            <div style="margin: 5px;">
+              <fieldset style="margin: 5px;">
+                <label for="">First Name</label>
+                <input type="text"  class="form-control" />   
+              </fieldset>
+    
+              <fieldset style="margin: 5px;">
+                <label for="">City</label> 
+                <input type="text" class="form-control"/>
+              </fieldset>
+    
+              <fieldset style="margin: 5px;"> 
+                  <label for="">We accept:</label> 
+                  <input type="text" class="form-control" />
+              </fieldset>
+            </div>
+          </div>
+
+            <div class="col-md-6">
+              
+              <div style="margin: 5px;">
+              
+                  <fieldset style="margin: 5px; border:none">
+                    <label for="">Last Name</label> 
+                    <input type="text" class="form-control" />
+                  </fieldset>
+                  
+
+                  <div style="margin: 5px;">
+                      <div class="row">
+                        <div class="col-6 d-flex flex-row justify-content-around">
+                           
+                          <fieldset
+                              style="margin: 5px;">
+                             
+                              <label for="inlineFormCustomSelectPref">State</label>
+                              <select class="form-control" id="inlineFormCustomSelectPref">
+                                <option selected>Choose...</option>
+                                <option value="1">Florida</option>
+                                <option value="2">Miami</option>
+                                <option value="3">Hollywood</option>
+                              </select>
+                            
+                            </fieldset>
+                            
+                            <fieldset
+                              style="margin: 5px;">
+                              <label for="">Postal Code</label> 
+                              <input type="text" class="form-control" />
+                            </fieldset>
+                          </div>
+                          <div style="margin: 5px;">
+                            <fieldset>
+                              <label class="my-1 mr-2" for="">Message</label>
+                              <textarea class="form-control"></textarea>
+                            </fieldset>
+                          </div>
+                      </div>
+                  </div>
+                </div>
+            </div>
+        </div>
+          <div class="justify-content-end d-flex" >
+            <button type="button" class="btn btn-primary ">Cancel</button>
+            <button type="button" class="btn btn-primary ms-1">Send</button>
+          </div>
+      </div>
+    </form>
+  </body>
+</html>
